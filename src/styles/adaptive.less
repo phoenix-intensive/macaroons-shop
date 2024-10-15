@@ -1,0 +1,771 @@
+@media screen and (max-width: 2560px) {
+  .footer {
+    .container {
+      .footer-rights-extra {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Промежуток в голове от 1024px до 1500px*/
+@media screen and (max-width: 1500px) {
+  .footer {
+    .present {
+      display: none;
+    }
+  }
+}
+
+
+/* Промежуток в голове от 1024px до 1230px*/
+@media screen and (max-width: 1230px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .advantages {
+    .advantages-items {
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 87px;
+        grid-column-gap: 1px;
+
+        .advantages-item {
+          margin: auto;
+          text-align: center;
+
+          .advantages-number {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .products {
+    .products-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 85px;
+      grid-column-gap: 0;
+
+      .products-item {
+        width: 263px;
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1186px) {
+  .header {
+    .container {
+      display: flex;
+      justify-content: space-between;
+
+      .logo a {
+        margin-right: 0;
+      }
+
+      .menu ul {
+        margin-right: 0;
+      }
+    }
+  }
+
+
+  .main-order {
+    .container {
+      .order {
+        .order-text {
+          .order-text-title-success {
+            display: none;
+            font-size: 29px;
+            font-family: TavolgaFree, sans-serif;
+            color: @text-color-two;
+            margin-bottom: 245px;
+            width: 317px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Промежуток в голове от 768px до 1023px*/
+@media screen and (max-width: 1023px) {
+  .macaroons {
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      .macaroons-info {
+        order: 1;
+      }
+
+      .macaroons-image {
+        margin-left: 190px;
+        margin-top: -99px;
+      }
+
+      .macaroons-image {
+        order: 2;
+
+      }
+    }
+  }
+
+
+  .advantages {
+    .advantages-info {
+      .container {
+        display: flex;
+        flex-direction: column;
+
+        .advantage-title {
+          order: 1;
+          text-align: center;
+          width: 475px;
+        }
+
+        .advantage-text {
+          order: 2;
+          text-align: center;
+          width: 668px;
+          margin-bottom: 40px;
+        }
+
+        .advantage-image {
+          order: 3;
+          width: 302px;
+        }
+      }
+
+    }
+  }
+
+
+  .main-order {
+    .container {
+      display: flex;
+      position: relative;
+
+      .order-image {
+        order: 2;
+      }
+
+      .order-image-main {
+        margin-bottom: -74px;
+        margin-left: -42px;
+        width: 100%;
+      }
+
+      .order {
+        order: 1;
+
+        .order-text {
+          .order-text-title-success {
+            display: none;
+            font-size: 24px;
+            font-family: TavolgaFree, sans-serif;
+            color: @text-color-two;
+            margin-left: 207px;
+            text-align: center;
+            order: 1;
+          }
+        }
+
+
+      }
+
+      .order-image .order-image-strawberry-one {
+        position: absolute;
+        top: 286px;
+        left: 409px;
+      }
+
+      .order-image .order-image-strawberry-two {
+        position: absolute;
+        top: 203px;
+        left: 586px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .header {
+    .container {
+      display: flex;
+      justify-content: flex-start;
+
+      .logo a {
+        margin-right: 103px;
+      }
+
+      .header-phone {
+        display: none;
+      }
+    }
+  }
+}
+
+
+/* Промежуток в голове от 425px до 767px*/
+@media screen and (max-width: 767px) {
+  .header {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .logo a {
+        margin-right: 0;
+        text-align: center;
+      }
+
+      .menu ul {
+        margin-top: 20px;
+      }
+    }
+  }
+
+
+  .macaroons {
+    padding: 62px 0 43px 0;
+
+
+  }
+
+  .macaroons {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .macaroons-info {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .macaroons-info-text {
+          margin-bottom: 40px;
+          font-size: 16px;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          width: 348px;
+        }
+      }
+
+      .macaroons-image {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        z-index: 0;
+
+        img {
+          width: 100%;
+          margin-top: 169px;
+          margin-left: -178px;
+        }
+
+        &::before {
+          content: '';
+          border: 2px solid #71081EFF;
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          top: 182px;
+          left: -69px;
+          z-index: -1;
+          animation: pulse 2s infinite;
+        }
+
+        &::after {
+          content: '';
+          border: 2px solid #71081EFF;
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          top: 182px;
+          left: -69px;
+          z-index: -1;
+          animation: pulse2 4s infinite;
+        }
+      }
+    }
+  }
+
+  .advantages {
+    .advantages-info {
+      .container {
+        .advantage-title {
+          font-size: 30px;
+          max-width: 317px;
+        }
+
+        .advantage-text {
+          font-size: 16px;
+          max-width: 344px;
+        }
+      }
+    }
+
+    .advantages-items {
+      max-width: 542px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .advantages-item {
+          .advantages-item-title {
+            font-size: 18px;
+            width: 174px;
+          }
+
+          .advantages-item-description {
+            font-size: 13px;
+            width: 184px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-order {
+    .container {
+      .order {
+        .order-text {
+          .order-text-title {
+            font-size: 30px;
+          }
+
+          .order-text-description {
+            font-size: 16px;
+          }
+
+          .order-text-title-success {
+            display: none;
+            font-size: 29px;
+            font-family: TavolgaFree, sans-serif;
+            color: @text-color-two;
+            margin-left: 40px;
+            text-align: center;
+            order: 1;
+          }
+        }
+
+        .order-input {
+          width: 375px;
+        }
+
+        .order-form {
+          .order-input {
+            width: 375px;
+          }
+
+          .button.button-order {
+            width: 375px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 647px) {
+  .products {
+    .products-items {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 85px;
+      grid-column-gap: 0;
+    }
+  }
+
+
+  .main-order {
+    .container {
+      position: relative;
+
+      .order-image-main {
+        display: none;
+      }
+
+      .order-image-strawberry-two {
+        display: none;
+      }
+
+      .order-image .order-image-strawberry-one {
+        position: absolute;
+        top: 87px;
+        left: 327px;
+      }
+    }
+  }
+
+
+  .footer {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      grid-column-gap: 0;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .footer-logo {
+        order: 1;
+
+        .footer-rights {
+          display: none;
+        }
+      }
+
+      .network {
+        order: 3;
+      }
+
+      .footer-rights-extra {
+        display: block;
+        order: 4;
+      }
+
+      .footer-phone {
+        order: 2;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 440px) {
+  .advantages {
+    .advantages-items {
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .advantages-item {
+          max-width: 345px;
+          margin: 0;
+
+          .advantages-item-title {
+            font-size: 18px;
+            width: 164px;
+          }
+
+          .advantages-item-description {
+            font-size: 13px;
+            width: 165px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Промежуток в голове от 375px до 424px*/
+@media screen and (max-width: 424px) {
+  .header{
+    position: fixed;
+    z-index: 1;
+  }
+
+  .menu-extra {
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    width: 345px;
+  }
+
+  .logo a {
+    order: 1;
+  }
+
+  .macaroons {
+    .container {
+      .macaroons-info {
+        .macaroons-info-title {
+          font-size: 32px;
+        }
+
+        .macaroons-info-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+
+  .main-order {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .products h1 {
+    font-size: 27px;
+  }
+
+  .main-order {
+    .container {
+      .order-image {
+        .order-image-strawberry-one {
+          position: absolute;
+          top: 115px;
+          left: 276px;
+        }
+      }
+
+      .order {
+        .order-text {
+          .order-text-title {
+            font-size: 30px;
+          }
+
+          .order-text-description {
+            font-size: 16px;
+
+          }
+
+          .order-text-title-success {
+            display: none;
+            font-size: 20px;
+            font-family: TavolgaFree, sans-serif;
+            color: @text-color-two;
+            margin-left: 20px;
+            text-align: center;
+            order: 1;
+          }
+        }
+
+        .order-input {
+          width: 340px;
+        }
+
+        .order-form {
+          .order-input {
+            width: 340px;
+          }
+
+          .button.button-order {
+            width: 340px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .menu {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background: rgba(227, 219, 219, 0.79);
+    z-index: 10;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+
+  .menu-item {
+    margin: 15px 0;
+  }
+
+  .burger {
+    display: block;
+    order: 2;
+
+  }
+
+  .burger svg {
+    width: 36px;
+    height: 36px;
+    fill: #f8cf9a;
+
+
+  }
+
+  .menu.open {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu .close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: rgb(164, 107, 0);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+}
+
+
+/* Промежуток в голове от 320px до 374px*/
+@media screen and (max-width: 374px) {
+  .header{
+    position: fixed;
+    z-index: 1;
+  }
+
+  .menu-extra {
+    width: 280px;
+  }
+
+  .macaroons {
+    .container {
+      .macaroons-image {
+        &::before {
+          content: '';
+          border: 2px solid #71081EFF;
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+          position: absolute;
+          top: 218px;
+          left: -38px;
+          z-index: -1;
+          animation: pulse 2s infinite;
+        }
+      }
+
+      .macaroons-image {
+        &::after {
+          content: '';
+          border: 2px solid #71081EFF;
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+          position: absolute;
+          top: 218px;
+          left: -38px;
+          z-index: -1;
+          animation: pulse2 4s infinite;
+        }
+      }
+
+      .macaroons-info {
+        .macaroons-info-title {
+          font-size: 27px;
+        }
+
+        .macaroons-info-text {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .advantages {
+    .advantages-info {
+      .container {
+        .advantage-title {
+          font-size: 27px;
+        }
+
+        .advantage-text {
+          font-size: 14px;
+          max-width: 270px;
+        }
+      }
+    }
+  }
+
+
+  .products h1 {
+    font-size: 24px;
+  }
+
+  .main-order {
+    .container {
+      .order-image {
+        .order-image-strawberry-one {
+          position: absolute;
+          top: 115px;
+          left: 212px;
+        }
+      }
+
+      .order {
+        .order-text {
+          .order-text-title {
+            font-size: 30px;
+          }
+
+          .order-text-description {
+            font-size: 16px;
+
+          }
+
+          .order-text-title-success {
+            display: none;
+            font-size: 25px;
+            font-family: TavolgaFree, sans-serif;
+            color: @text-color-two;
+            margin-left: -21px;
+            text-align: center;
+            order: 1;
+          }
+        }
+
+        .order-input {
+          width: 285px;
+        }
+
+        .order-form {
+          .order-input {
+            width: 285px;
+          }
+
+          .button.button-order {
+            width: 285px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "theme";
+
+
+
+
